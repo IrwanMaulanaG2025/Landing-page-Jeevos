@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  compiler: {
-    turbopack: false,
-  },
   images: {
-    domains: ["placehold.co"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "placehold.co",
+      },
+    ],
   },
 };
 
-export default nextConfig
+export default nextConfig;
