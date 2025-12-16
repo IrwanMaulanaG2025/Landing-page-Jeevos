@@ -1,0 +1,8 @@
+[
+    { "id": "all", "label": "All" },
+    { "id": "coconut-oil", "label": "Coconut Oil" },
+    { "id": "coconut-sugar", "label": "Coconut Sugar" },
+    { "id": "coconut-aminos", "label": "Coconut Aminos" },
+    { "id": "coconut-nectar", "label": "Coconut Nectar" },
+    { "id": "coconut-syrup", "label": "Coconut Syrup" }
+]

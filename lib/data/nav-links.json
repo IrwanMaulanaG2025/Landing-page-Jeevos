@@ -1,0 +1,7 @@
+[
+  { "label": "Beranda", "href": "/" },
+  { "label": "Produk", "href": "/products" },
+  { "label": "Tentang Kami", "href": "/about" },
+  { "label": "Testimoni", "href": "/testimonials" },
+  { "label": "Kontak", "href": "/contact" }
+]

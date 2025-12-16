@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Kafe & Restoran",
+      "description": "Pemasok gula kelapa dan sirup untuk kafe terkemuka.",
+      "icon": "Building"
+    },
+    {
+      "name": "Toko Organik",
+      "description": "Tersedia di toko organik dan grosir makanan sehat.",
+      "icon": "Store"
+    },
+    {
+      "name": "Komunitas Sehat",
+      "description": "Bermitra dengan komunitas untuk gaya hidup sehat.",
+      "icon": "Heart"
+    }
+]

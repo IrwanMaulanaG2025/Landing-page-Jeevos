@@ -1,0 +1,214 @@
+[
+  {
+    "id": 1,
+    "slug": "vco",
+    "name": "Virgin Coconut Oil — Jeevos",
+    "category": "coconut-oil",
+    "image": "/VCO-product.jpg",
+    "badge": "Cold-Pressed",
+    "description": "Virgin Coconut Oil (VCO) Jeevos adalah minyak nabati serbaguna dari kelapa segar tanpa pemanasan tinggi. Kaya lemak sehat MCT yang membantu meningkatkan metabolisme, menjaga kesehatan jantung, menstabilkan energi, serta mendukung gaya hidup sehat modern.",
+    "usage": "Digunakan untuk memasak sehat, campuran minuman, serta perawatan kulit & rambut. Ideal untuk konsumsi harian dalam pola hidup sehat.",
+    "benefits": [
+      "Membantu pengelolaan berat badan",
+      "Menjaga kesehatan jantung",
+      "Mengurangi risiko diabetes",
+      "Menunjang kesehatan reproduksi",
+      "Memperkuat sistem imun",
+      "Aman untuk penderita kolesterol",
+      "Meningkatkan energi harian"
+    ],
+    "specifications": {
+      "Bahan": "100% minyak kelapa murni (cold-pressed)",
+      "Kemasan": "Glass Bottle / Pail",
+      "Varian & Ukuran": "250 ml / 1000 ml / 18 L",
+      "Proses": "Cold-Pressed (tanpa pemanasan tinggi)"
+    },
+    "ingredients": "100% Virgin Coconut Oil (kelapa segar)",
+    "priceList": [
+      { "size": "250 ml", "packaging": "Glass Bottle", "retail": "Rp 80.000", "cartonPrice": "Rp 4.200.000", "qtyPerCarton": 20 },
+      { "size": "1000 ml", "packaging": "Glass Bottle", "retail": "Rp 230.000", "cartonPrice": "Rp 4.000.000", "qtyPerCarton": 10 },
+      { "size": "18 L", "packaging": "Pail", "retail": "Rp 3.600.000", "cartonPrice": "-", "qtyPerCarton": "-" }
+    ],
+    "relatedIds": [2,3,5]
+  },
+  {
+    "id": 2,
+    "slug": "coconut-sugar",
+    "name": "Coconut Sugar — Jeevos",
+    "category": "coconut-sugar",
+    "image": "/Coconut-sugar.jpg",
+    "badge": "Rendah GI",
+    "description": "Coconut Sugar Jeevos adalah pemanis alami dari 100% nira kelapa pilihan. Rasa manis lembut, indeks glikemik rendah, dan kaya mineral. Tersedia dalam varian Original, Ginger, Spice, Temulawak, dan Turmeric.",
+    "ingredients": "100% nira kelapa (varian dapat mengandung ekstrak rempah sesuai label).",
+    "variants": [
+      {
+        "id": "coconut-sugar original",
+        "name": "Coconut-sugar Original",
+        "image": "/Coconut-sugar.jpg",
+        "price": "Rp 30.000 (250 g) | Rp 100.000 (1 kg)",
+        "description": "Pemanis dari kristalisasi nira kelapa dengan rasa karamel alami — cocok untuk minuman, masakan, dan baking.",
+        "benefits": [
+          "Rasa manis lembut & kaya mineral alami",
+          "Indeks glikemik rendah dibanding gula rafinasi",
+          "Mendukung pencernaan & kesehatan metabolik",
+          "Alternatif pemanis yang lebih bersih untuk keluarga"
+        ],
+        "usage": "Ganti gula pasir pada minuman dan resep (gunakan 75–90% takaran gula putih sesuai resep).",
+        "specifications": { "Bahan": "Kristal nira kelapa 100%", "Kemasan": "Eco Pouch (250 g / 1 kg)" },
+        "priceList": [
+          { "size": "250 g", "packaging": "Eco Pouch", "retail": "Rp 30.000", "cartonPrice": "Rp 500.000", "qtyPerCarton": 20 },
+          { "size": "1000 g", "packaging": "Eco Pouch", "retail": "Rp 100.000", "cartonPrice": "Rp 950.000", "qtyPerCarton": 10 }
+        ]
+      },
+      {
+        "id": "coconut-sugar ginger",
+        "name": "Coconut-sugar Ginger",
+        "image": "/Coconut-sugar.jpg",
+        "price": "Rp 45.000 (250 g) | Rp 150.000 (1 kg)",
+        "description": "Gula Semut Jahe Jeevos — perpaduan nira kelapa dan jahe asli. Manis lembut dengan sensasi hangat, ideal untuk minuman hangat, kopi, dan baking sehat.",
+        "benefits": [
+          "Mendukung kadar kolesterol sehat",
+          "Indeks glikemik rendah — lebih ramah gula darah",
+          "Membantu pencernaan & fungsi saraf-otot",
+          "Memberi efek menghangatkan tubuh",
+          "Membantu meredakan ketidaknyamanan menstruasi dan stres ringan"
+        ],
+        "usage": "Tambahkan 1–2 sdt untuk minuman; gunakan 75–80% takaran gula putih saat baking.",
+        "specifications": { "Bahan": "Kristal nira kelapa 100% + ekstrak jahe alami", "Kemasan": "Eco Pouch (250 g / 1 kg)" },
+        "priceList": [
+          { "size": "250 g", "packaging": "Eco Pouch", "retail": "Rp 45.000", "cartonPrice": "Rp 850.000", "qtyPerCarton": 20 },
+          { "size": "1000 g", "packaging": "Eco Pouch", "retail": "Rp 150.000", "cartonPrice": "Rp 1.450.000", "qtyPerCarton": 10 }
+        ]
+      },
+      {
+        "id": "coconut-sugar spice",
+        "name": "Coconut-sugar Spice",
+        "image": "/Coconut-sugar.jpg",
+        "price": "Rp 48.000 (250 g) | Rp 170.000 (1 kg)",
+        "description": "Varian Spice — gula kelapa berpadu rempah alami, memberikan aroma hangat yang cocok untuk kopi, jamu modern, dan dessert.",
+        "benefits": [
+          "Mendukung pencernaan",
+          "Memberi sensasi hangat",
+          "Menurunkan risiko diabetes",
+          "Menunjang kesehatan saraf & metabolisme"
+        ],
+        "usage": "Ideal untuk minuman rempah, jamu, dan topping pancake.",
+        "specifications": { "Bahan": "Nira kelapa + campuran rempah alami", "Kemasan": "Eco Pouch (250 g / 1 kg)" },
+        "priceList": [
+          { "size": "250 g", "packaging": "Eco Pouch", "retail": "Rp 48.000", "cartonPrice": "Rp 900.000", "qtyPerCarton": 20 },
+          { "size": "1000 g", "packaging": "Eco Pouch", "retail": "Rp 170.000", "cartonPrice": "Rp 1.650.000", "qtyPerCarton": 10 }
+        ]
+      },
+      {
+        "id": "Coconut-sugar temulawak",
+        "name": "Coconut-sugar Temulawak",
+        "image": "/Coconut-sugar.jpg",
+        "price": "Rp 42.000 (250 g) | Rp 155.000 (1 kg)",
+        "description": "Varian Temulawak — diperkaya ekstrak temulawak, cocok untuk jamu modern dan minuman herbal dengan cita rasa earthy.",
+        "benefits": [
+          "Mendukung fungsi liver",
+          "Membantu pencernaan",
+          "Menghangatkan tubuh",
+          "Membantu menjaga kadar gula darah"
+        ],
+        "usage": "Campurkan pada jamu atau minuman herbal; cocok juga untuk masakan manis-savory.",
+        "specifications": { "Bahan": "Nira kelapa + ekstrak temulawak", "Kemasan": "Eco Pouch (250 g / 1 kg)" },
+        "priceList": [
+          { "size": "250 g", "packaging": "Eco Pouch", "retail": "Rp 42.000", "cartonPrice": "Rp 840.000", "qtyPerCarton": 20 },
+          { "size": "1000 g", "packaging": "Eco Pouch", "retail": "Rp 155.000", "cartonPrice": "Rp 1.450.000", "qtyPerCarton": 10 }
+        ]
+      },
+      {
+        "id": "coconut-sugar turmeric",
+        "name": "Coconut-sugar Turmeric",
+        "image": "/Coconut-sugar.jpg",
+        "price": "Rp 45.000 (250 g) | Rp 175.000 (1 kg)",
+        "description": "Varian Kunyit — gula kelapa berpadu ekstrak kunyit untuk warna keemasan dan manfaat antiinflamasi. Cocok untuk golden milk dan baking.",
+        "benefits": [
+          "Mengurangi inflamasi",
+          "Menghangatkan tubuh",
+          "Menjaga kesehatan pencernaan",
+          "Mendukung sistem imun"
+        ],
+        "usage": "Tambahkan ke golden milk, smoothie, atau resep kue untuk warna dan manfaat tambahan.",
+        "specifications": { "Bahan": "Nira kelapa + ekstrak kunyit", "Kemasan": "Eco Pouch (250 g / 1 kg)" },
+        "priceList": [
+          { "size": "250 g", "packaging": "Eco Pouch", "retail": "Rp 45.000", "cartonPrice": "Rp 850.000", "qtyPerCarton": 20 },
+          { "size": "1000 g", "packaging": "Eco Pouch", "retail": "Rp 175.000", "cartonPrice": "Rp 1.650.000", "qtyPerCarton": 10 }
+        ]
+      }
+    ],
+    "relatedIds": [1,3,5]
+  },
+  {
+    "id": 3,
+    "slug": "coconut-aminos",
+    "name": "Coconut Aminos - Jeevos",
+    "category": "coconut-aminos",
+    "image": "/Coconut-aminos.jpg",
+    "badge": "Soy-Free",
+    "description": "Coconut Aminos adalah kecap asin alami berbasis nira kelapa. Rendah kalori, bebas kedelai, GI rendah, dan aman untuk diet serta pengaturan gula darah.",
+    "usage": "Gunakan untuk tumisan, salad, marinasi, atau hidangan berbasis kecap. Tambahkan di tahap akhir agar nutrisi alami tetap terjaga.",
+    "benefits": [
+      "Mendukung penurunan berat badan",
+      "Lebih aman untuk gula darah (low GI)",
+      "Baik untuk kesehatan jantung",
+      "Cocok untuk semua jenis masakan"
+    ],
+    "specifications": { "Bahan": "Nira kelapa fermentasi alami", "Kemasan": "Glass Bottle / Jerrycan" },
+    "priceList": [
+      { "size": "250 ml", "packaging": "Glass Bottle", "retail": "Rp 52.000", "cartonPrice": "Rp 2.700.000", "qtyPerCarton": 20 },
+      { "size": "1000 ml", "packaging": "Glass Bottle", "retail": "Rp 145.000", "cartonPrice": "Rp 2.500.000", "qtyPerCarton": 10 },
+      { "size": "5000 ml", "packaging": "Jerrycan", "retail": "Rp 600.000", "cartonPrice": "-", "qtyPerCarton": "-" }
+    ],
+    "relatedIds": [2,4]
+  },
+  {
+    "id": 4,
+    "slug": "coconut-nectar",
+    "name": "Coconut Nectar - Jeevos",
+    "category": "coconut-nectar",
+    "image": "/Coconut-Nectar.jpg",
+    "badge": "Alami",
+    "description": "Coconut Nectar adalah pemanis alami dari nira kelapa berbunga yang diproses suhu rendah sehingga nutrisi tetap terjaga. Rasa lembut dan GI rendah, cocok untuk gaya hidup sehat modern.",
+    "usage": "Cocok untuk kopi, teh, susu, smoothies, yogurt, protein bar, muffin, pancake, dan glazing topping makanan.",
+    "benefits": [
+      "Alternatif pemanis yang lebih sehat",
+      "Stabil untuk kadar gula darah",
+      "Baik untuk kesehatan jantung",
+      "Mengurangi risiko diabetes",
+      "Meningkatkan energi tubuh"
+    ],
+    "specifications": { "Proses": "Low Temperature Processing", "Indeks Glikemik": "Rendah" },
+    "priceList": [
+      { "size": "250 ml", "packaging": "Glass Bottle", "retail": "Rp 75.000", "cartonPrice": "Rp 3.900.000", "qtyPerCarton": 20 },
+      { "size": "1000 ml", "packaging": "Glass Bottle", "retail": "Rp 275.000", "cartonPrice": "Rp 4.800.000", "qtyPerCarton": 10 },
+      { "size": "5000 ml", "packaging": "Jerrycan", "retail": "Rp 950.000", "cartonPrice": "-", "qtyPerCarton": "-" }
+    ],
+    "relatedIds": [3,5]
+  },
+  {
+    "id": 5,
+    "slug": "coconut-syrup",
+    "name": "Coconut Syrup - Jeevos",
+    "category": "coconut-syrup",
+    "image": "/Coconut-Syrup.jpg",
+    "badge": "Serbaguna",
+    "description": "Coconut Syrup adalah pemanis alami cair dari getah kelapa yang mengandung mineral & protein alami. Lebih sehat dibanding gula rafinasi dan ideal untuk minuman serta dessert.",
+    "usage": "Cocok untuk minuman panas/dingin, smoothies, serta topping pancake, kue, dan biskuit.",
+    "benefits": [
+      "Membantu menurunkan berat badan",
+      "Menjaga kesehatan jantung",
+      "Memperkuat sistem imun",
+      "Mengurangi risiko diabetes",
+      "Meningkatkan energi tubuh"
+    ],
+    "specifications": { "Bentuk": "Sirup Cair", "Indeks Glikemik": "Rendah" },
+    "priceList": [
+      { "size": "250 ml", "packaging": "Glass Bottle", "retail": "Rp 46.000", "cartonPrice": "Rp 2.400.000", "qtyPerCarton": 20 },
+      { "size": "1000 ml", "packaging": "Glass Bottle", "retail": "Rp 127.000", "cartonPrice": "Rp 2.200.000", "qtyPerCarton": 10 },
+      { "size": "5000 ml", "packaging": "Jerrycan", "retail": "Rp 550.000", "cartonPrice": "-", "qtyPerCarton": "-" }
+    ],
+    "relatedIds": [2,4]
+  }
+]
