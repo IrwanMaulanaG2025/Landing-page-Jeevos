@@ -188,16 +188,14 @@ export default function ContactPage() {
               <div className="grid lg:grid-cols-2 gap-12 items-center"> {/* New grid layout */}
                 {/* Left: Map */}
                 <div className="rounded-2xl overflow-hidden shadow-xl relative h-[400px] lg:h-[500px]">
-                  <iframe
-                    width="100%"
-                    height="100%"
-                    frameBorder="0"
-                    scrolling="no"
-                    marginHeight="0"
-                    marginWidth="0"
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=109.2100,-7.4300,109.2500,-7.3900&amp;layer=mapnik&amp;marker=-7.4100,109.2300"
-                    style={{ border: "1px solid #ccc", borderRadius: "1rem" }}
-                  ></iframe>
+<iframe
+  frameBorder={0}
+  scrolling="no"
+  marginHeight={0}
+  marginWidth={0}
+  src="https://www.openstreetmap.org/export/embed.html?bbox=109.2100,-7.4300,109.2500,-7.3900&layer=mapnik&marker=-7.4100,109.2300"
+  style={{ border: "1px solid #ccc", borderRadius: "1rem" }}
+/>
                   <div className="absolute inset-0 flex items-center justify-center bg-black/10">
                     <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 shadow-lg">
                       <a href="https://maps.app.goo.gl/ZdFTWsWZqqjjJASf9" target="_blank" rel="noopener noreferrer">
