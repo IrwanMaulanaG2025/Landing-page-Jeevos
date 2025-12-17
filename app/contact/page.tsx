@@ -12,7 +12,12 @@ import { MessageCircle, Mail, MapPin, Clock, Send, Instagram, Facebook, Shopping
 import ScrollReveal from "@/components/scroll-reveal";
 import Image from "next/image";
 import { clsx } from "clsx";
-import LeafletMap from "@/components/leaflet-map";
+import dynamic from 'next/dynamic';
+
+const LeafletMap = dynamic(() => import('@/components/leaflet-map'), {
+  ssr: false,
+  loading: () => <div className="bg-gray-200 animate-pulse h-full w-full" />,
+});
 
 // --- Helper: Solutions Section ---
 const SolutionsSection = () => {
