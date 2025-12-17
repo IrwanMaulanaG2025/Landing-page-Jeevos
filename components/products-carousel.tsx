@@ -31,7 +31,7 @@ const ProductGrid = () => {
 
   const observerCallback = useCallback((entries: IntersectionObserverEntry[]) => {
     setVisibleCards((prev) => {
-      const newVisible = prev ? new Set(prev) : new Set();
+      const newVisible = prev ? new Set(prev) : new Set<number>();
       entries.forEach((entry) => {
         const id = Number((entry.target as HTMLElement).dataset.id);
         if (isNaN(id)) return;
