@@ -1,7 +1,5 @@
-'use client'
-
 import { useState, useEffect } from 'react'
-import products from '@/lib/data/products.json';
+import productsData from '@/lib/data/products.json';
 import { Product } from '@/lib/data/products';
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
@@ -11,6 +9,8 @@ import { CheckCircle, MessageCircle, Leaf, Shield, Package, ArrowUp, ChevronDown
 import ScrollReveal from '@/components/scroll-reveal'
 import ProductDisplayCard from '@/components/product-display-card'
 import whyChooseUsItems from '@/lib/data/why-choose-us.json';
+
+const products: Product[] = productsData;
 
 type CategoryFilter = 'all' | 'coconut-oil' | 'coconut-sugar' | 'coconut-aminos' | 'coconut-nectar' | 'coconut-syrup'
 
@@ -94,7 +94,7 @@ export default function ProductsPage() {
 
         {/* Products List */}
         <section className="max-w-7xl mx-auto px-4 md:px-8 space-y-20">
-          {filteredProducts.map((product: Product, index) => {
+          {filteredProducts.map((product, index) => {
             const isEven = index % 2 === 0
             return (
               <ProductDisplayCard key={`${selectedCategory}-${product.id}`} product={product} isEven={isEven} />
