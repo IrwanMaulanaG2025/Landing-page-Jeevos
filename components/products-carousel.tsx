@@ -6,7 +6,7 @@ import { Product } from "@/lib/data/products";
 import ProductCard from "./product-card";
 import { clsx } from "clsx";
 import { useIsMobile } from "@/hooks/use-mobile";
-import useEmblaCarousel, { EmblaCarouselType } from "embla-carousel-react";
+import useEmblaCarousel, { UseEmblaCarouselType } from "embla-carousel-react";
 
 import categoriesData from "@/lib/data/product-categories.json";
 import { ProductCategory } from "@/lib/data/product-categories";
@@ -119,11 +119,11 @@ const ProductCarousel = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
-  const updateSlidesInView = useCallback((api: EmblaCarouselType) => {
+  const updateSlidesInView = useCallback((api: UseEmblaCarouselType) => {
     setSlidesInView(api.slidesInView());
   }, []);
 
-  const onSelect = useCallback((api: EmblaCarouselType) => {
+  const onSelect = useCallback((api: UseEmblaCarouselType) => {
     setSelectedIndex(api.selectedScrollSnap());
   }, []);
 
