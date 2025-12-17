@@ -195,6 +195,13 @@ export default function ContactPage() {
                 {/* Left: Map */}
                 <div className="rounded-2xl overflow-hidden shadow-xl relative h-[400px] lg:h-[500px]">
                   <LeafletMap position={[-7.4100, 109.2300]} zoom={13} popupText="Kantor Pusat Jeevos" />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/10 pointer-events-none">
+                    <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 shadow-lg pointer-events-auto">
+                      <a href="https://maps.app.goo.gl/ZdFTWsWZqqjjJASf9" target="_blank" rel="noopener noreferrer">
+                        Lihat di Google Maps
+                      </a>
+                    </Button>
+                  </div>
                 </div>
                 {/* Right: Description */}
                 <div className="space-y-6">
