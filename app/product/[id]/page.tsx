@@ -51,7 +51,7 @@ export default function ProductDetailPage() {
   const displayBenefits = activeVariant?.benefits || product.benefits;
   const displaySpecifications = activeVariant?.specifications || product.specifications;
   const displayUsage = activeVariant?.usage || product.usage;
-  const displayIngredients = activeVariant?.ingredients || product.ingredients;
+  const displayIngredients = product.ingredients;
   const displayPriceList = activeVariant?.priceList || product.priceList;
 
 
