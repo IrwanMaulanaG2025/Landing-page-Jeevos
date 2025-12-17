@@ -6,7 +6,7 @@ import { Menu, X, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import { products } from "@/lib/data/products"; // Import products data
+import products from "@/lib/data/products.json"; // Import products data
 
 import navLinks from "@/lib/data/nav-links.json";
 import { NavLink } from "@/lib/data/nav-links";
