@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Poppins } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   description:
     "Global supplier of high-quality coconut-based products. Sustainable, certified, and export-ready solutions.",
   generator: "v0.app",
-  viewport: "width=device-width, initial-scale=1",
   icons: {
     icon: [
       {
@@ -26,6 +25,11 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
