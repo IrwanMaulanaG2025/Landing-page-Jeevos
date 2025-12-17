@@ -12,7 +12,7 @@ import ScrollReveal from '@/components/scroll-reveal'
 import ProductDisplayCard from '@/components/product-display-card'
 import whyChooseUsItems from '@/lib/data/why-choose-us.json';
 
-const products: Product[] = productsData;
+const products: Product[] = productsData as Product[];
 
 type CategoryFilter = 'all' | 'coconut-oil' | 'coconut-sugar' | 'coconut-aminos' | 'coconut-nectar' | 'coconut-syrup'
 
