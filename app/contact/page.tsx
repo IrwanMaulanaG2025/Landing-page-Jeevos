@@ -12,6 +12,7 @@ import { MessageCircle, Mail, MapPin, Clock, Send, Instagram, Facebook, Shopping
 import ScrollReveal from "@/components/scroll-reveal";
 import Image from "next/image";
 import { clsx } from "clsx";
+import LeafletMap from "@/components/leaflet-map";
 
 // --- Helper: Solutions Section ---
 const SolutionsSection = () => {
@@ -188,21 +189,7 @@ export default function ContactPage() {
               <div className="grid lg:grid-cols-2 gap-12 items-center"> {/* New grid layout */}
                 {/* Left: Map */}
                 <div className="rounded-2xl overflow-hidden shadow-xl relative h-[400px] lg:h-[500px]">
-<iframe
-  frameBorder={0}
-  scrolling="no"
-  marginHeight={0}
-  marginWidth={0}
-  src="https://www.openstreetmap.org/export/embed.html?bbox=109.2100,-7.4300,109.2500,-7.3900&layer=mapnik&marker=-7.4100,109.2300"
-  style={{ border: "1px solid #ccc", borderRadius: "1rem" }}
-/>
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/10">
-                    <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 shadow-lg">
-                      <a href="https://maps.app.goo.gl/ZdFTWsWZqqjjJASf9" target="_blank" rel="noopener noreferrer">
-                        Lihat di Google Maps
-                      </a>
-                    </Button>
-                  </div>
+                  <LeafletMap position={[-7.4100, 109.2300]} zoom={13} popupText="Kantor Pusat Jeevos" />
                 </div>
                 {/* Right: Description */}
                 <div className="space-y-6">
