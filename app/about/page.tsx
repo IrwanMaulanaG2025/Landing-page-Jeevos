@@ -119,7 +119,7 @@ const OurTeam = () => {
                     {member.name}
                   </h3>
                   <p className="mt-1 text-emerald-600">{member.role}</p>
-                  <p className="mt-5 text-gray-600 leading-relaxed">
+                  <p className="mt-5 text-gray-600 leading-relaxed text-balance">
                     Sebagai pendiri, Salsabila Lutfiyyah terlibat penuh dalam setiap tahap. Ia mengawal langsung proses dari pengolahan bahan baku, produksi secara tradisional, hingga distribusi untuk menjamin setiap produk Jeevos sampai ke tangan Anda dengan kualitas terbaik.
                   </p>
                 </div>

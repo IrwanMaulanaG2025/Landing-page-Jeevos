@@ -15,7 +15,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname(); // Get current pathname
-  const isProductDetailPage = pathname.startsWith("/product/"); // Check if it's a product detail page
+  const isHomePage = pathname === "/"; // Check if it's the homepage
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,35 +26,33 @@ export default function Navbar() {
   }, []);
 
   const navbarClasses = `fixed top-0 w-full z-50 transition-all duration-300 ${
-    isProductDetailPage
-      ? "bg-white/95 shadow-md backdrop-blur-sm" // Always solid on product detail page
-      : isScrolled
+    !isHomePage || isScrolled
       ? "bg-white/95 shadow-md backdrop-blur-sm"
       : "bg-transparent"
   }`;
 
   const logoTextClasses = `font-bold text-2xl transition-colors ${
-    isProductDetailPage || isScrolled ? "text-gray-800" : "text-white"
+    !isHomePage || isScrolled ? "text-gray-800" : "text-white"
   }`;
 
   const logoBgClasses = `w-10 h-10 rounded-lg flex items-center justify-center transition-colors ${
-    isProductDetailPage || isScrolled ? "bg-gray-200" : "bg-white"
+    !isHomePage || isScrolled ? "bg-gray-200" : "bg-white"
   }`;
 
   const navLinkClasses = (linkHref: string) => `font-medium text-sm transition-colors ${
-    isProductDetailPage || isScrolled
+    !isHomePage || isScrolled
       ? "text-gray-600 hover:text-emerald-600"
       : "text-white/90 hover:text-white"
   }`;
 
   const ctaButtonClasses = `hidden sm:flex gap-2 transition-colors ${
-    isProductDetailPage || isScrolled
+    !isHomePage || isScrolled
       ? "bg-emerald-600 text-white hover:bg-emerald-700"
       : "bg-white/90 text-emerald-700 hover:bg-white"
   }`;
 
   const mobileMenuIconClasses = `md:hidden ${
-    isProductDetailPage || isScrolled ? "text-gray-800" : "text-white"
+    !isHomePage || isScrolled ? "text-gray-800" : "text-white"
   }`;
 
   return (

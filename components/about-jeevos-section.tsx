@@ -75,7 +75,7 @@ export default function AboutJeevosSection() {
                         <h4 className="text-lg font-semibold text-gray-800">
                           {feature.title}
                         </h4>
-                        <p className="text-sm text-gray-600 mt-1 text-justify">
+                        <p className="text-sm text-gray-600 mt-1">
                           {feature.description}
                         </p>
                       </div>
@@ -85,7 +85,7 @@ export default function AboutJeevosSection() {
               </div>
 
               {/* Additional text content */}
-              <p className="text-gray-600 leading-relaxed mt-8 text-justify">
+              <p className="text-gray-600 leading-relaxed mt-8">
                 Komitmen kami adalah menghadirkan kebaikan alam murni, diolah dengan hati, untuk kesejahteraan Anda dan komunitas.
               </p>
 
