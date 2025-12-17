@@ -1,15 +1,18 @@
 "use client";
 
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
-import products from "@/lib/data/products.json";
+import productsData from "@/lib/data/products.json";
 import { Product } from "@/lib/data/products";
 import ProductCard from "./product-card";
 import { clsx } from "clsx";
 import { useIsMobile } from "@/hooks/use-mobile";
-import useEmblaCarousel, { UseEmblaCarouselType } from "embla-carousel-react";
+import useEmblaCarousel from "embla-carousel-react";
+import { EmblaCarouselType } from "embla-carousel";
 
 import categoriesData from "@/lib/data/product-categories.json";
 import { ProductCategory } from "@/lib/data/product-categories";
+
+const products: Product[] = productsData as Product[];
 
 const ALL_CATEGORIES = "All";
 
@@ -29,7 +32,7 @@ const ProductGrid = () => {
     return products.filter((p) => p.badge === activeFilter);
   }, [activeFilter]);
 
-  const observerCallback = useCallback((entries: IntersectionObserverEntry[]) => {
+  const observerCallback = useMemo(() => (entries: IntersectionObserverEntry[]) => {
     setVisibleCards((prev) => {
       const newVisible = prev ? new Set(prev) : new Set<number>();
       entries.forEach((entry) => {
@@ -80,7 +83,7 @@ const ProductGrid = () => {
         ))}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredProducts.map((product: Product) => (
+        {filteredProducts.map((product) => (
           <ProductCard
             key={product.id}
             product={product}
@@ -115,34 +118,33 @@ const DotButton = ({ selected, onClick }: { selected: boolean; onClick: () => vo
 
 const ProductCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ align: "start", containScroll: "trimSnaps" });
-  const [slidesInView, setSlidesInView] = useState<number[] | null>(null);
+  const [slidesInView, setSlidesInView] = useState<number[]>([]);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
 
-  const updateSlidesInView = useCallback((api: UseEmblaCarouselType) => {
+  const scrollTo = (index: number) => emblaApi?.scrollTo(index);
+
+  const updateSlidesInView = useCallback((api: EmblaCarouselType) => {
     setSlidesInView(api.slidesInView());
   }, []);
 
-  const onSelect = useCallback((api: UseEmblaCarouselType) => {
+  const onSelect = useCallback((api: EmblaCarouselType) => {
     setSelectedIndex(api.selectedScrollSnap());
   }, []);
 
-  const scrollTo = useCallback((index: number) => {
-    emblaApi?.scrollTo(index);
-  }, [emblaApi]);
-
   useEffect(() => {
     if (!emblaApi) return;
-    
-    setScrollSnaps(emblaApi.scrollSnapList());
+
     updateSlidesInView(emblaApi);
-    
-    emblaApi.on("select", onSelect);
+    onSelect(emblaApi);
+    setScrollSnaps(emblaApi.scrollSnapList());
+
     emblaApi.on("scroll", updateSlidesInView);
+    emblaApi.on("select", onSelect);
     emblaApi.on("reInit", () => {
-      setScrollSnaps(emblaApi.scrollSnapList());
       updateSlidesInView(emblaApi);
       onSelect(emblaApi);
+      setScrollSnaps(emblaApi.scrollSnapList());
     });
   }, [emblaApi, updateSlidesInView, onSelect]);
 
@@ -154,7 +156,7 @@ const ProductCarousel = () => {
             <div key={product.id} className="flex-shrink-0 w-[85vw] sm:w-[45vw] pl-4 pb-4">
               <ProductCard
                 product={product}
-                isInView={slidesInView === null ? undefined : slidesInView.includes(index)}
+                isInView={slidesInView.includes(index)}
                 setRef={() => {}} // setRef is not needed for Embla's animation logic
               />
             </div>

@@ -33,7 +33,7 @@ export default function ProductsPage() {
   const whyChooseUsItems = [
     'Kualitas premium dari kelapa segar pilihan',
     'Diproduksi langsung oleh pabrik kami (bukan reseller)',
-    'Proses modern yang menjaga kemurnian & nutrisi',
+    'Proses tradisional yang menjaga kemurnian & nutrisi',
     'Standar mutu stabil di setiap batch',
     'Harga kompetitif karena langsung dari produsen',
     'Cocok untuk konsumsi & industri',
