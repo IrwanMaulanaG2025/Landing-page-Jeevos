@@ -1,4 +1,9 @@
 import { Leaf, Facebook, Instagram } from "lucide-react"
+import React from "react";
+
+interface IconProps extends React.SVGProps<SVGSVGElement> {
+  size?: number;
+}
 
 export default function Footer() {
   const socialLinks = [
@@ -6,7 +11,7 @@ export default function Footer() {
     { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/itsalsabil_?igsh=MTBwN2VoY3pqNDkybQ==" },
     { 
       name: "TikTok", 
-      icon: (props: React.SVGProps<SVGSVGElement>) => (
+      icon: (props: IconProps) => (
         <svg 
           xmlns="http://www.w3.org/2000/svg" 
           width={props.size} 
