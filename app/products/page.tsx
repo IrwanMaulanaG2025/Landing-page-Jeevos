@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, useEffect } from 'react'
 import productsData from '@/lib/data/products.json';
 import { Product } from '@/lib/data/products';
