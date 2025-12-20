@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
@@ -20,6 +21,16 @@ interface LeafletMapProps {
 }
 
 const LeafletMap: React.FC<LeafletMapProps> = ({ position, zoom, popupText }) => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null; // Or a loading spinner
+  }
+
   return (
     <MapContainer
       center={position}
