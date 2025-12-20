@@ -165,16 +165,16 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       <Navbar />
-      <main>
+      <main className="pt-16">
         <div className="py-16 sm:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Opening Section */}
             <ScrollReveal animation="fadeInUp" delay={200}>
-              <div className="max-w-3xl mx-auto text-center mb-16">
-                <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 text-balance">
+              <div className="max-w-3xl mx-auto text-center mb-12 md:mb-16">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900 text-balance">
                   Cerita di Balik Setiap Tetes Kemurnian
                 </h1>
-                <p className="mt-6 text-lg text-gray-600">
+                <p className="mt-6 text-lg text-gray-600 text-pretty max-w-prose mx-auto leading-relaxed">
                   Jeevos lebih dari sekadar produk. Kami adalah penjaga tradisi,
                   mitra petani lokal, dan penggerak gaya hidup sehat yang
                   berakar pada kekayaan alam Indonesia.

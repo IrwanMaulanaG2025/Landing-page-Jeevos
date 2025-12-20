@@ -78,7 +78,7 @@ export default function ProductDetailPage() {
             </div>
           </ScrollReveal>
 
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 overflow-hidden">
             
             {/* Left: Image Gallery */}
             <ScrollReveal animation="slideInLeft" delay={300}>
@@ -176,7 +176,7 @@ export default function ProductDetailPage() {
                 </div>
 
                 {/* Tabs */}
-                <div className="mt-12">
+                <div className="mt-12 overflow-x-auto">
                   <Tabs defaultValue="specifications" className="w-full">
                     <TabsList className="grid w-full grid-cols-3">
                       <TabsTrigger value="specifications">Spesifikasi</TabsTrigger>

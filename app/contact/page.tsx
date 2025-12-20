@@ -195,14 +195,7 @@ export default function ContactPage() {
               <div className="grid lg:grid-cols-2 gap-12 items-center"> {/* New grid layout */}
                 {/* Left: Map */}
                 <div className="rounded-2xl overflow-hidden shadow-xl relative h-[400px] lg:h-[500px]">
-                  <LeafletMap position={[-7.4100, 109.2300]} zoom={13} popupText="Kantor Pusat Jeevos" />
-                  <div className="absolute inset-0 z-20 flex items-center justify-center bg-black/10 pointer-events-none">
-                    <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 shadow-lg pointer-events-auto">
-                      <a href="https://maps.app.goo.gl/ZdFTWsWZqqjjJASf9" target="_blank" rel="noopener noreferrer">
-                        Lihat di Google Maps
-                      </a>
-                    </Button>
-                  </div>
+                  <LeafletMap position={[-7.4169651, 109.2590406]} zoom={13} popupText="Kantor Pusat Jeevos" />
                 </div>
                 {/* Right: Description */}
                 <div className="space-y-6">
@@ -225,6 +218,13 @@ export default function ContactPage() {
                         <p className="text-gray-600">Senin - Jumat, 08:00 - 16:00 WIB</p>
                       </div>
                     </div>
+                  </div>
+                  <div className="pt-4 text-center lg:text-left">
+                    <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 shadow-lg">
+                      <a href="https://maps.app.goo.gl/ZdFTWsWZqqjjJASf9" target="_blank" rel="noopener noreferrer">
+                        Lihat di Google Maps
+                      </a>
+                    </Button>
                   </div>
                 </div>
               </div>

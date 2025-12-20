@@ -43,7 +43,7 @@ export default function AboutJeevosSection() {
         </div>
 
         {/* Main Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-10 items-stretch">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-10 items-stretch overflow-hidden">
           
           {/* Left Image */}
           <ScrollReveal animation="slideInLeft" delay={200}>

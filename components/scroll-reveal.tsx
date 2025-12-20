@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, ReactNode } from "react";
 import { clsx } from "clsx";
+import { useMediaQuery } from "@/hooks/use-media-query";
 
 interface ScrollRevealProps {
   children: ReactNode;
@@ -15,13 +16,19 @@ interface ScrollRevealProps {
 export default function ScrollReveal({
   children,
   animation = "fadeInUp",
-  delay = 200, // Changed default delay from 100 to 200
+  delay = 200,
   threshold = 0.1,
   triggerOnce = true,
   className,
 }: ScrollRevealProps) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
+  // On mobile, force horizontal slide animations to be a vertical one
+  const effectiveAnimation = isMobile && (animation === 'slideInLeft' || animation === 'slideInRight') 
+    ? 'fadeInUp' 
+    : animation;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -60,11 +67,11 @@ export default function ScrollReveal({
         {
           // Visible state
           "opacity-100 translate-x-0 translate-y-0": isVisible,
-          // Hidden states based on animation prop
+          // Hidden states based on effective animation
           "opacity-0": !isVisible,
-          "translate-y-8": !isVisible && animation === "fadeInUp",
-          "-translate-x-8": !isVisible && animation === "slideInLeft",
-          "translate-x-8": !isVisible && animation === "slideInRight",
+          "translate-y-8": !isVisible && effectiveAnimation === "fadeInUp",
+          "-translate-x-8": !isVisible && effectiveAnimation === "slideInLeft",
+          "translate-x-8": !isVisible && effectiveAnimation === "slideInRight",
         }
       )}
     >

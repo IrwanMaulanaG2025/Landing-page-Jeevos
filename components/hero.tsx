@@ -20,7 +20,7 @@ export default function Hero() {
       className="relative pt-36 sm:pt-48 pb-40 sm:pb-32 flex items-center justify-center text-white text-center px-4"
     >
       {/* Background Image */}
-      <div className="absolute inset-0 ">
+      <div className="absolute inset-0 overflow-hidden">
         <Image
           src="/organic-coconut-farm.jpg"
           alt="Perkebunan Kelapa Organik Jeevos"

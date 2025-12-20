@@ -38,8 +38,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`font-sans antialiased ${poppins.variable}`}>
+    <html lang="en" suppressHydrationWarning className="overflow-x-hidden">
+      <body className={`font-sans antialiased ${poppins.variable} overflow-x-hidden`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

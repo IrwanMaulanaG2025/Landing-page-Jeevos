@@ -72,7 +72,7 @@ export default function ProductsPage() {
           </ScrollReveal>
 
           {/* Filter Tabs - Sticky */}
-          <div className="sticky top-20 z-40 -mx-4 md:-mx-8 px-4 md:px-8 py-4">
+          <div className="sticky top-20 z-40 -mx-4 md:-mx-8 px-4 md:px-8 py-4 overflow-y-hidden touch-pan-x">
             <div className="max-w-7xl mx-auto overflow-x-auto scrollbar-hide">
               <div className="flex gap-3 min-w-max md:justify-center pb-2 md:pb-0">
                 {categories.map((cat, idx) => (

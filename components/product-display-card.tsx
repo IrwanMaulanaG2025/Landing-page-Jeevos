@@ -67,23 +67,22 @@ export default function ProductDisplayCard({ product, isEven }: ProductDisplayCa
                 </p>
               </div>
 
-              {/* Variant Selector Cards (only for products with variants) */}
+              {/* Variant Selector Buttons (only for products with variants) */}
               {product.variants && product.variants.length > 0 && (
                 <div className="mt-6">
                   <h4 className="text-sm font-semibold text-gray-500 mb-3">Pilih Varian:</h4>
-                  <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {product.variants.map(variant => (
                       <button
                         key={variant.id}
                         onClick={() => setActiveVariant(variant)}
-                        className={`p-2 rounded-lg border-2 text-center transition-all duration-200 ${
+                        className={`px-3 py-1.5 rounded-md border text-xs font-medium transition-colors ${
                           activeVariant?.id === variant.id
-                            ? 'border-emerald-500 bg-emerald-50 scale-105 shadow-md'
-                            : 'border-gray-200 bg-white hover:border-emerald-300'
+                            ? 'bg-emerald-600 text-white border-emerald-600'
+                            : 'bg-white text-gray-600 border-gray-200 hover:border-emerald-400'
                         }`}
                       >
-                        <Image src={variant.image || ''} alt={variant.name} width={80} height={80} className="mx-auto rounded-md mb-2" />
-                        <span className="text-xs font-bold text-gray-800">{variant.name}</span>
+                        {variant.name.replace('Coconut-sugar ', '')}
                       </button>
                     ))}
                   </div>
