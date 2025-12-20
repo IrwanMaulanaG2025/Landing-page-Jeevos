@@ -85,7 +85,7 @@ const ContactInfo = () => {
               <MessageCircle size={32} />
               <div>
                 <h3 className="text-xl font-bold">WhatsApp (Respon Cepat)</h3>
-                <p className="opacity-90">+62 896-6626-9658</p>
+                <p className="opacity-90">+62 851-5635-5964</p>
               </div>
             </div>
             <ArrowRight size={24} className="opacity-70 group-hover:opacity-100 transition-transform group-hover:translate-x-1" />
@@ -113,6 +113,7 @@ const ContactInfo = () => {
             <div>
               <h3 className="text-xl font-semibold text-gray-800">Alamat Kantor</h3>
               <p className="text-gray-600 mt-1">Banyumas, Purwokerto, Jawa Tengah, Indonesia</p>
+              <p className="text-xs text-gray-500 mt-1">PT Alami Jaya Organik</p>
             </div>
           </div>
           <div className="flex items-start gap-4 border-t border-gray-200 pt-6">

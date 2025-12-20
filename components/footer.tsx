@@ -93,7 +93,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm">
-            <p className="text-gray-500 text-center md:text-left">&copy;© 2025 Jeevos — Some assets by Freepik</p>
+            <p className="text-gray-500 text-center md:text-left">&copy; {new Date().getFullYear()} PT Alami Jaya Organik. All Rights Reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0 text-gray-500">
               <a href="#" className="hover:text-white transition">
                 Privacy Policy

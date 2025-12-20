@@ -38,6 +38,7 @@ const Sidebar = () => {
               Brand produk olahan kelapa organik premium yang berakar dari
               kearifan lokal Banyumas.
             </p>
+            <p className="text-xs text-gray-500 mt-2">Bagian dari PT Alami Jaya Organik</p>
             <Button
               asChild
               className="w-full bg-emerald-600 hover:bg-emerald-700 text-white"
