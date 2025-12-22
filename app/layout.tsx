@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     ],
     apple: "/apple-icon.png",
   },
+  verification: {
+    google: 'Zr933yBWCoYW7-oLnAeuiZhRgEHvuNyBWoq84sOqp9M',
+  },
 }
 
 export const viewport: Viewport = {
