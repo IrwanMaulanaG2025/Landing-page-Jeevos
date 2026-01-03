@@ -204,7 +204,7 @@ export default function ProductSection() {
 
         <div className="mt-16 text-center">
           <a
-            href={`/product/${products[0].id}`}
+            href="/products"
             className="inline-block px-8 py-3 text-base font-medium text-white bg-emerald-600 rounded-full hover:bg-emerald-700 transition-transform duration-200 hover:scale-105"
           >
             Lihat Detail Produk Unggulan
